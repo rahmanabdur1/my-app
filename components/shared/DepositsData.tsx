@@ -13,7 +13,7 @@ import {
   getSortedRowModel,
   useReactTable,
 } from "@tanstack/react-table"
-import { PaginationItem, PaginationNext, PaginationPrevious } from "../ui/pagination";
+import { PaginationEllipsis, PaginationItem, PaginationNext, PaginationPrevious } from "../ui/pagination";
 
 import { Button } from "@/components/ui/button"
 import {
@@ -410,9 +410,13 @@ export function DepositsData() {
       <div className="flex items-center justify-center  py-1">
       <Pagination>
         <PaginationPrevious  />
-        <PaginationItem>
-      
-        </PaginationItem>
+        
+            1
+        <PaginationEllipsis/>
+        556 57 58 
+        <PaginationEllipsis/>
+        100
+    
         <PaginationNext/>
       </Pagination>
         </div>

@@ -29,6 +29,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table"
+import { Pagination, PaginationEllipsis, PaginationNext, PaginationPrevious } from "../ui/pagination"
 
 
 const data: Payment[] = [
@@ -283,7 +284,17 @@ export function TransactionData() {
         </Table>
       </div>
       <div className="flex items-center justify-end  py-1">
-
+      <Pagination>
+        <PaginationPrevious  />
+        
+            1
+        <PaginationEllipsis/>
+        556 57 58 
+        <PaginationEllipsis/>
+        100
+    
+        <PaginationNext/>
+      </Pagination>
       </div>
     </div>
   )

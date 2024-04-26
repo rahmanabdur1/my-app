@@ -34,7 +34,8 @@ import {
     TableHeader,
     TableRow,
 } from "@/components/ui/table"
-import { PaginationItem } from "../ui/pagination"
+import { Pagination, PaginationEllipsis, PaginationNext, PaginationPrevious } from "../ui/pagination"
+
 
 
 const data: Payment[] = [
@@ -374,8 +375,19 @@ export function DataTableDemo() {
                     </TableBody>
                 </Table>
             </div>
+            {/* pagination */}
             <div className="flex items-center justify-center py-2">
-
+            <Pagination>
+        <PaginationPrevious />
+        
+            1
+        <PaginationEllipsis/>
+        556 57 58 
+        <PaginationEllipsis/>
+        100
+    
+        <PaginationNext/>
+      </Pagination>
             </div>
         </div>
 
